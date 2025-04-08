@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="ususcichner.css">
+</head>
+
+<body>
+    <!-- Swiper structure -->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide menu">
+                <div class="swiper-second">
+                    <a href="ususcichner.html">Առարկաններ</a>
+                    <nav>
+                        <ul class="menu-par">
+                            <li class="menu-list"><a href="Mayreni.html" class="menu-link">Մայրենի</a></li>
+                            <li class="menu-list"><a href="Matenatika.html" class="menu-link">Մաթեմատիկա</a></li>
+                            <li class="menu-list"><a href="Patmutyun.html" class="menu-link">Պատմություն</a></li>
+                            <li class="menu-list"><a href="Bnakgitutyun.html" class="menu-link">Բնագիտություն</a></li>
+                            <li class="menu-list"><a href="Dasvar.html" class="menu-link">Դասվար</a></li>
+                            <li class="menu-list"><a href="fizkult.html" class="menu-link">Ֆիզկուտուրա</a></li>
+                            <li class="menu-list"><a href="nzp.html" class="menu-link">Ռազմագիտություն</a></li>
+                            <li class="menu-list"><a href="otar.html" class="menu-link">Օտար Լեզու</a></li>
+                            <li class="menu-list"><a href="kerparvest.html" class="menu-link">Կերպարվեստ/Տենոլոգիա</a></li>
+                            <li class="menu-list"><a href="shaxmat.html" class="menu-link">Շախմատ/ԹԳՀԳ</a></li>
+                            <li class="menu-list"><a href="../index.html" class="menu-link">Home</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="swiper-slide content">
+                <div class="menu-button">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="card-glav">
+                    <h1>Ռազմագիտություն</h1>
+                    <div class="card-par">
+                        <div class="card-per">
+                            <div class="card">
+                                <div class="top-card">
+                                    <img src="img/user.webp" alt="">
+                                </div>
+                                <div class="bottom-card">
+                                    <div class="card-content">
+                                        <span class="card-title"> Ստեփանյան</span>
+                                        <p class="card-txt">Աշոտ </p>
+                                        <a href="#" class="card-btn">Ռազմագիտություն</a>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            var menuButton = document.querySelector('.menu-button');
+            var openMenu = function () {
+                swiper.slidePrev();
+            };
+            var swiper = new Swiper('.swiper', {
+                slidesPerView: 'auto',
+                initialSlide: 1,
+                resistanceRatio: 0,
+                slideToClickedSlide: true,
+                on: {
+                    slideChangeTransitionStart: function () {
+                        var slider = this;
+                        if (slider.activeIndex === 0) {
+                            menuButton.classList.add('cross');
+                            menuButton.removeEventListener('click', openMenu, true);
+                        } else {
+                            menuButton.classList.remove('cross');
+                        }
+                    },
+                    slideChangeTransitionEnd: function () {
+                        var slider = this;
+                        if (slider.activeIndex === 1) {
+                            menuButton.addEventListener('click', openMenu, true);
+                        }
+                    },
+                },
+            });
+        </script>
+</body>
+
+</html>
