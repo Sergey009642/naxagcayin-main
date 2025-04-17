@@ -75,7 +75,7 @@
             position: relative;
             text-decoration: none;
             color: #fff;
-            background: linear-gradient(45deg, #095608d0, #0d5e0a, #000000);
+            background: linear-gradient(45deg, #095608, #095608, #000000);
             padding: 14px 25px;
             border-radius: 10px;
             font-size: 1.25em;
@@ -104,7 +104,7 @@
             content: "";
             position: absolute;
             inset: 0px;
-            background: linear-gradient(45deg, #ffffff, #0d5e0a, #246804);
+            background: linear-gradient(45deg, #ffffff, #2fff28, #5bc928);
             border-radius: 9px;
             transition: 0.5s;
             opacity: 0;
@@ -297,7 +297,7 @@
         .gic-kanach {
             margin-top: 20px;
             width: 120px;
-            border: 1px solid #D8AE5E;
+            border: 1px solid #095608;
             margin-left: 83.5px;
         }
 
@@ -349,7 +349,7 @@
             height: 60px;
             width: 60px;
             border-radius: 100%;
-            color: rgb(255, 174, 0);
+            color: #095608;
             fill: currentColor;
             box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3),
                 inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
@@ -360,7 +360,7 @@
             border-radius: 5px;
             padding: 5px;
             transition: all 0.3s;
-            color: rgb(255, 174, 0);
+            color: #095608;
             background-color: rgba(255, 255, 255, 0.3);
             position: absolute;
             z-index: 9999;
@@ -685,6 +685,7 @@
             .card {
                 margin-bottom: 0;
                 margin-bottom: 20px;
+                margin-top: 20px;
             }
 
             .logo>img {
@@ -951,6 +952,7 @@
             }
             .card{
                 margin-bottom: 0;
+                margin-top: 0;
             }
             .pensle{
                 margin-top: 0;
@@ -972,4 +974,10 @@
             .auto{
                 margin-top: 15px;
             }
-        }
+            .svg{
+                width: 50px;
+                height: 50px;
+                padding: 12px;
+            }
+           
+          }
