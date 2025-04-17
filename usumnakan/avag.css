@@ -10,6 +10,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 20px;
     height: 100vh;
   }
   
@@ -86,3 +88,7 @@
     background: #5a67d8;
   }
   
+  .tun{	
+    font-size: 50px;
+    color: white;
+  }

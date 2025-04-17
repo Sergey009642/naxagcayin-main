@@ -8,6 +8,8 @@
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to right, #5976fc, #0509ca);
     display: flex;
+    flex-direction: column;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -86,3 +88,8 @@
     background: #5a67d8;
   }
   
+
+  .tun{	
+    font-size: 50px;
+    color: white;
+  }

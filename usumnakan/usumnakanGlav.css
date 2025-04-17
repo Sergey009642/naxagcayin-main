@@ -163,13 +163,11 @@
 		}
 	}
 }
-/* general styling */
 @layer base {
 	* {
 		box-sizing: border-box;
 	}
 	:root {
-		/*color-scheme: light dark;*/
 
 		--bg-dark: rgb(2, 6, 24);
 		--bg-light: rgb(229, 229, 229);
@@ -190,4 +188,9 @@
 		place-items: center;
 		gap: 2rem;
 	}
+}
+
+.tun{	
+	font-size: 50px;
+	color: white;
 }
