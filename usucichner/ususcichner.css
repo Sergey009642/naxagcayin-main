@@ -302,8 +302,23 @@ nav {
     margin-top: 30px;
 }
 .card-par {
-    scroll-behavior:smooth;
-  }
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 20px;
+}
+.card {
+    flex: 0 0 auto;
+}
+
+.card-per::-webkit-scrollbar {
+    height: 8px;
+}
+
+.card-per::-webkit-scrollbar-thumb {
+    background: #2c8dfb;
+    border-radius: 10px;
+}
 
 
 @media (max-width: 600px) {
