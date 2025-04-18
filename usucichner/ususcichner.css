@@ -271,7 +271,8 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.card-par{
+
+.card-par {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -279,56 +280,88 @@ nav {
     margin: 0 auto;
 }
 
-.card-per{
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: nowrap; /* Կարևորը՝ թույլ չենք տալիս հաջորդ տող ընկնել */
-    overflow-x: auto;   /* Ակտիվացնում ենք հորիզոնական սկրոլը */
-    gap: 20px;
-    padding: 20px;
-    scroll-behavior: smooth;
-}
-.top-card>img{
+
+
+.top-card>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.swiper-second>a{
+.swiper-second>a {
     color: white;
     font-size: 30px;
 }
-.card-per{
+
+.card-per {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
+    margin-top: 30px;
 }
-
 .card-par {
-    display: block;
-    overflow-y: auto;
-    white-space: nowrap;
-    padding: 20px;
-    -webkit-overflow-scrolling: touch;
-}
+    scroll-behavior:smooth;
+  }
 
-.card-per {
-    display: inline-flex;
-    gap: 20px;
-}
 
-.card {
-    display: inline-block;
-    min-width: 250px;
-    white-space: normal;
-    vertical-align: top;
-}
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+    .card {
+        width: 140px;
+        height: 204px;
+        flex: 0 0 auto;
+    }
+
     .card-per {
-        flex-wrap: nowrap;
-        overflow-y: auto;
+        display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 20px;
+    }
+    .card-par {
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        padding: 20px;
+      }
+      .card {
+        flex: 0 0 auto;
+      }
+
+    .card-per::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .card-per::-webkit-scrollbar-thumb {
+        background: #2c8dfb;
+        border-radius: 10px;
+    }
+
+    .bottom-card::before {
+        bottom: 80px;
+        width: 70px;
+    }
+
+    .card:hover .bottom-card::before {
+        bottom: 142px;
+        transition: bottom 0.3s ease;
+    }
+
+    .card-title {
+        font-size: 14px;
+    }
+
+    .card-btn {
+        font-size: 9px;
+    }
+
+    .card-glav > h1 {
+        font-size: 26px;
+        margin-top: 100px;
+    }
+
+    .card-per {
+        margin-top: 60px;
     }
 }
