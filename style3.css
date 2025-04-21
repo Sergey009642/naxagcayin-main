@@ -93,8 +93,6 @@ body {
 }
 .forth-card{
     margin-top: 40px;
-    width: 1000px;
-    height: 1150px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .forth-card>p{
@@ -107,4 +105,15 @@ body {
     justify-content: center;
     margin: 0 auto;
     max-width: 1440px;
+}
+
+
+@media screen and (max-width:768px) {
+  .third-title>p{
+    padding: 20px;
+  }
+  .forth-card-cont{
+    padding: 20px;
+  }
+
 }
