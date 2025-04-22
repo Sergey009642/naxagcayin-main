@@ -305,6 +305,7 @@ nav {
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
+    display: flex;
     padding: 20px;
 }
 .card {
@@ -378,5 +379,30 @@ nav {
 
     .card-per {
         margin-top: 60px;
+    }
+    .menu-par{
+        display: flex;
+        gap: 15px;
+    }
+    .menu-link{
+        font-size: 20px;
+    }
+    .swiper-second>a {
+        color: white;
+        font-size: 25px;
+    }
+    .card {
+        min-width: 140px;
+        flex: 0 0 auto;
+    }
+
+    .card-per {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .card-par {
+        overflow-x: auto;
     }
 }
