@@ -305,7 +305,6 @@ nav {
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
-    display: flex;
     padding: 20px;
 }
 .card {
@@ -324,85 +323,25 @@ nav {
 
 @media (max-width: 600px) {
     .card {
-        width: 140px;
-        height: 204px;
+        width: 90px;
+        height: 130px;
         flex: 0 0 auto;
     }
-
-    .card-per {
-        display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    gap: 20px;
-    }
-    .card-par {
-        overflow-x: auto;
-        overflow-y: hidden;
-        white-space: nowrap;
-        padding: 20px;
-      }
-      .card {
-        flex: 0 0 auto;
-      }
-
-    .card-per::-webkit-scrollbar {
-        height: 8px;
-    }
-
-    .card-per::-webkit-scrollbar-thumb {
-        background: #2c8dfb;
-        border-radius: 10px;
-    }
-
-    .bottom-card::before {
-        bottom: 80px;
-        width: 70px;
-    }
-
-    .card:hover .bottom-card::before {
-        bottom: 142px;
-        transition: bottom 0.3s ease;
-    }
-
     .card-title {
-        font-size: 14px;
+        font-weight: 700;
+        font-size: 11px;
+        margin-top: 10px;
     }
-
-    .card-btn {
+    .card-txt {
+        font-size: 8px;
+    }
+    .bottom-card::before{
+        bottom: 55px;
+    }
+    .card-title {
+        font-weight: 600;
         font-size: 9px;
-    }
-
-    .card-glav > h1 {
-        font-size: 26px;
-        margin-top: 100px;
-    }
-
-    .card-per {
-        margin-top: 60px;
-    }
-    .menu-par{
-        display: flex;
-        gap: 15px;
-    }
-    .menu-link{
-        font-size: 20px;
-    }
-    .swiper-second>a {
-        color: white;
-        font-size: 25px;
-    }
-    .card {
-        min-width: 140px;
-        flex: 0 0 auto;
-    }
-
-    .card-per {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-    }
-
-    .card-par {
-        overflow-x: auto;
+        margin-top: 6px;
     }
 }
+
