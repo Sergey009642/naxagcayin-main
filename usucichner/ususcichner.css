@@ -350,10 +350,7 @@ nav {
         flex-direction: column;
         gap: 10px;
     }
-    .menu-link {
-        color: white;
-        font-size: 22px;
-    }
+   
 
     .swiper-second>a {
         color: white;
