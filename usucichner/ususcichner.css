@@ -343,5 +343,22 @@ nav {
         font-size: 9px;
         margin-top: 6px;
     }
+    .menu-par {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .menu-link {
+        color: white;
+        font-size: 22px;
+    }
+
+    .swiper-second>a {
+        color: white;
+        font-size: 25px;
+    }
 }
+
 
