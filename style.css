@@ -71,48 +71,50 @@
             animation: avelin 1s ease-out;
         }
 
-    /* From Uiverse.io by CristianMontoya98 */ 
-.btn {
-    width: 6.5em;
-    height: 2.3em;
-    margin: 0.5em;
-    background: black;
-    color: white;
-    border: none;
-    border-radius: 0.625em;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    
-   }
-   .know{
-    font-size: 14px;
-   }
-   button:hover {
-    color: black;
-   }
-   
-   button:after {
-    content: "";
-    background: white;
-    position: absolute;
-    z-index: -1;
-    left: -20%;
-    right: -20%;
-    top: 0;
-    bottom: 0;
-    transform: skewX(-45deg) scale(0, 1);
-    transition: all 0.5s;
-   }
-   
-   button:hover:after {
-    transform: skewX(-45deg) scale(1, 1);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-   }
+        .button {
+            position: relative;
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(45deg, #09ff04, #ffffff, #04ff00);
+            padding: 14px 25px;
+            border-radius: 10px;
+            font-size: 1.25em;
+            border: 2px solid #0d5e0a;
+            cursor: pointer;
+        }
+
+        .button span {
+            position: relative;
+            z-index: 1;
+        }
+
+        .button::before {
+            content: "";
+            position: absolute;
+            inset: 1px;
+            background: #0d5e0a;
+            border-radius: 9px;
+            transition: 0.5s;
+        }
+
+        .button:hover::before {
+            opacity: 0.7;
+        }
+
+        .button::after {
+            content: "";
+            position: absolute;
+            inset: 0px;
+            background: linear-gradient(45deg, #9fff87, #00ff22, #5bc928);
+            border-radius: 9px;
+            transition: 0.5s;
+            opacity: 0;
+            filter: blur(20px);
+        }
+
+        .button:hover:after {
+            opacity: 1;
+        }
 
         .main__cont {
             display: flex;

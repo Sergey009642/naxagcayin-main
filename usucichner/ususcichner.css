@@ -350,7 +350,9 @@ nav {
         flex-direction: column;
         gap: 10px;
     }
-
+    .card-btn{
+        font-size: 6px;
+    }
 
     .swiper-second>a {
         color: white;
