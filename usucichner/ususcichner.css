@@ -356,6 +356,9 @@ nav {
         color: white;
         font-size: 25px;
     }
+    .card-glav>h1{
+        font-size: 24px;
+    }
 }
 
 
